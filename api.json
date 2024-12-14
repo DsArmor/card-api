@@ -1,0 +1,145 @@
+{
+  "Endpoints": [
+    {
+      "Endpoint": "/auth/register",
+      "Method": "POST",
+      "Description": "Register a new user account.",
+      "RequestBody": {
+        "name": "string",
+        "email": "string",
+        "password": "string",
+        "phone": "string (optional)",
+        "photo": "string (base64 encoded image, optional)"
+      },
+      "Response": {
+        "status": "success/error",
+        "message": "User registered successfully or error message."
+      }
+    },
+    {
+      "Endpoint": "/auth/login",
+      "Method": "POST",
+      "Description": "Authenticate user and return a token.",
+      "RequestBody": {
+        "email": "string",
+        "password": "string"
+      },
+      "Response": {
+        "status": "success/error",
+        "token": "JWT token if successful",
+        "message": "Login successful or error message."
+      }
+    },
+    {
+      "Endpoint": "/auth/forgot-password",
+      "Method": "POST",
+      "Description": "Initiate password recovery process.",
+      "RequestBody": {
+        "email": "string"
+      },
+      "Response": {
+        "status": "success/error",
+        "message": "Password recovery email sent or error message."
+      }
+    },
+    {
+      "Endpoint": "/auth/delete-account",
+      "Method": "DELETE",
+      "Description": "Delete user account (requires authentication).",
+      "Headers": {
+        "Authorization": "Bearer <token>"
+      },
+      "Response": {
+        "status": "success/error",
+        "message": "Account deleted or error message."
+      }
+    },
+    {
+      "Endpoint": "/users/update-profile",
+      "Method": "PUT",
+      "Description": "Update user profile information.",
+      "Headers": {
+        "Authorization": "Bearer <token>"
+      },
+      "RequestBody": {
+        "name": "string (optional)",
+        "email": "string (optional)",
+        "phone": "string (optional)",
+        "password": "string (optional)",
+        "photo": "string (base64 encoded image, optional)"
+      },
+      "Response": {
+        "status": "success/error",
+        "message": "Profile updated successfully or error message."
+      }
+    },
+    {
+      "Endpoint": "/cards",
+      "Method": "POST",
+      "Description": "Create a new business card (requires authentication).",
+      "Headers": {
+        "Authorization": "Bearer <token>"
+      },
+      "RequestBody": {
+        "fullName": "string",
+        "company": "string",
+        "email": "string",
+        "photo": "string (base64 encoded image, optional)"
+      },
+      "Response": {
+        "status": "success/error",
+        "message": "Business card created successfully or error message."
+      }
+    },
+    {
+      "Endpoint": "/cards/{cardId}",
+      "Method": "PUT",
+      "Description": "Edit an existing business card (requires authentication).",
+      "Headers": {
+        "Authorization": "Bearer <token>"
+      },
+      "RequestBody": {
+        "fullName": "string (optional)",
+        "company": "string (optional)",
+        "email": "string (optional)",
+        "photo": "string (base64 encoded image, optional)"
+      },
+      "Response": {
+        "status": "success/error",
+        "message": "Business card updated successfully or error message."
+      }
+    },
+    {
+      "Endpoint": "/cards/{cardId}",
+      "Method": "DELETE",
+      "Description": "Delete a business card (requires authentication).",
+      "Headers": {
+        "Authorization": "Bearer <token>"
+      },
+      "Response": {
+        "status": "success/error",
+        "message": "Business card deleted successfully or error message."
+      }
+    },
+    {
+      "Endpoint": "/cards",
+      "Method": "GET",
+      "Description": "Get all business cards for the authenticated user.",
+      "Headers": {
+        "Authorization": "Bearer <token>"
+      },
+      "Response": {
+        "status": "success/error",
+        "cards": [
+          {
+            "cardId": "string",
+            "fullName": "string",
+            "company": "string",
+            "email": "string",
+            "photo": "string (base64 encoded image)"
+          }
+        ]
+      }
+    }
+  ]
+}
