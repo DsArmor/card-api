@@ -6,7 +6,7 @@
   },
   "host": "api.example.com",
   "basePath": "/v1",
-  "schemes": ["https"],
+  "schemes": [ "https" ],
   "paths": {
     "/auth/register": {
       "post": {
@@ -19,13 +19,13 @@
             "schema": {
               "type": "object",
               "properties": {
-                "name": {"type": "string"},
-                "email": {"type": "string"},
-                "password": {"type": "string"},
-                "phone": {"type": "string"},
-                "photo": {"type": "string", "description": "Base64 encoded image"}
+                "name": { "type": "string" },
+                "email": { "type": "string" },
+                "password": { "type": "string" },
+                "phone": { "type": "string" },
+                "photo": { "type": "string", "description": "Base64 encoded image" }
               },
-              "required": ["name", "email", "password"]
+              "required": [ "name", "email", "password" ]
             }
           }
         ],
@@ -35,8 +35,8 @@
             "schema": {
               "type": "object",
               "properties": {
-                "status": {"type": "string"},
-                "message": {"type": "string"}
+                "status": { "type": "string" },
+                "message": { "type": "string" }
               }
             }
           }
@@ -54,10 +54,10 @@
             "schema": {
               "type": "object",
               "properties": {
-                "email": {"type": "string"},
-                "password": {"type": "string"}
+                "email": { "type": "string" },
+                "password": { "type": "string" }
               },
-              "required": ["email", "password"]
+              "required": [ "email", "password" ]
             }
           }
         ],
@@ -67,9 +67,9 @@
             "schema": {
               "type": "object",
               "properties": {
-                "status": {"type": "string"},
-                "token": {"type": "string"},
-                "message": {"type": "string"}
+                "status": { "type": "string" },
+                "token": { "type": "string" },
+                "message": { "type": "string" }
               }
             }
           }
@@ -87,9 +87,9 @@
             "schema": {
               "type": "object",
               "properties": {
-                "email": {"type": "string"}
+                "email": { "type": "string" }
               },
-              "required": ["email"]
+              "required": [ "email" ]
             }
           }
         ],
@@ -99,8 +99,8 @@
             "schema": {
               "type": "object",
               "properties": {
-                "status": {"type": "string"},
-                "message": {"type": "string"}
+                "status": { "type": "string" },
+                "message": { "type": "string" }
               }
             }
           }
@@ -125,8 +125,8 @@
             "schema": {
               "type": "object",
               "properties": {
-                "status": {"type": "string"},
-                "message": {"type": "string"}
+                "status": { "type": "string" },
+                "message": { "type": "string" }
               }
             }
           }
@@ -151,11 +151,11 @@
             "schema": {
               "type": "object",
               "properties": {
-                "name": {"type": "string"},
-                "email": {"type": "string"},
-                "phone": {"type": "string"},
-                "password": {"type": "string"},
-                "photo": {"type": "string", "description": "Base64 encoded image"}
+                "name": { "type": "string" },
+                "email": { "type": "string" },
+                "phone": { "type": "string" },
+                "password": { "type": "string" },
+                "photo": { "type": "string", "description": "Base64 encoded image" }
               }
             }
           }
@@ -166,8 +166,8 @@
             "schema": {
               "type": "object",
               "properties": {
-                "status": {"type": "string"},
-                "message": {"type": "string"}
+                "status": { "type": "string" },
+                "message": { "type": "string" }
               }
             }
           }
@@ -192,12 +192,13 @@
             "schema": {
               "type": "object",
               "properties": {
-                "fullName": {"type": "string"},
-                "company": {"type": "string"},
-                "email": {"type": "string"},
-                "photo": {"type": "string", "description": "Base64 encoded image"}
+                "fullName": { "type": "string" },
+                "company": { "type": "string" },
+                "email": { "type": "string" },
+                "phone": { "type": "string" },
+                "photo": { "type": "string", "description": "Base64 encoded image" }
               },
-              "required": ["fullName", "company", "email"]
+              "required": [ "fullName", "company", "email" ]
             }
           }
         ],
@@ -207,8 +208,8 @@
             "schema": {
               "type": "object",
               "properties": {
-                "status": {"type": "string"},
-                "message": {"type": "string"}
+                "status": { "type": "string" },
+                "message": { "type": "string" }
               }
             }
           }
@@ -231,17 +232,18 @@
             "schema": {
               "type": "object",
               "properties": {
-                "status": {"type": "string"},
+                "status": { "type": "string" },
                 "cards": {
                   "type": "array",
                   "items": {
                     "type": "object",
                     "properties": {
-                      "cardId": {"type": "string"},
-                      "fullName": {"type": "string"},
-                      "company": {"type": "string"},
-                      "email": {"type": "string"},
-                      "photo": {"type": "string"}
+                      "cardId": { "type": "string" },
+                      "fullName": { "type": "string" },
+                      "company": { "type": "string" },
+                      "email": { "type": "string" },
+                      "phone": { "type": "string" },
+                      "photo": { "type": "string" }
                     }
                   }
                 }
@@ -275,10 +277,11 @@
             "schema": {
               "type": "object",
               "properties": {
-                "fullName": {"type": "string"},
-                "company": {"type": "string"},
-                "email": {"type": "string"},
-                "photo": {"type": "string", "description": "Base64 encoded image"}
+                "fullName": { "type": "string" },
+                "company": { "type": "string" },
+                "email": { "type": "string" },
+                "phone": { "type": "string" },
+                "photo": { "type": "string", "description": "Base64 encoded image" }
               }
             }
           }
@@ -289,8 +292,8 @@
             "schema": {
               "type": "object",
               "properties": {
-                "status": {"type": "string"},
-                "message": {"type": "string"}
+                "status": { "type": "string" },
+                "message": { "type": "string" }
               }
             }
           }
@@ -319,8 +322,8 @@
             "schema": {
               "type": "object",
               "properties": {
-                "status": {"type": "string"},
-                "message": {"type": "string"}
+                "status": { "type": "string" },
+                "message": { "type": "string" }
               }
             }
           }

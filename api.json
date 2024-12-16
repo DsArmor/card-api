@@ -84,6 +84,7 @@
         "fullName": "string",
         "company": "string",
         "email": "string",
+        "phone": "string (optional)",
         "photo": "string (base64 encoded image, optional)"
       },
       "Response": {
@@ -102,6 +103,7 @@
         "fullName": "string (optional)",
         "company": "string (optional)",
         "email": "string (optional)",
+        "phone": "string (optional)",
         "photo": "string (base64 encoded image, optional)"
       },
       "Response": {
@@ -136,6 +138,7 @@
             "fullName": "string",
             "company": "string",
             "email": "string",
+            "phone": "string (optional)",
             "photo": "string (base64 encoded image)"
           }
         ]
