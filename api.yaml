@@ -193,12 +193,12 @@
               "type": "object",
               "properties": {
                 "fullName": { "type": "string" },
-                "company": { "type": "string" },
+                "company_job_title": { "type": "string" },
                 "email": { "type": "string" },
                 "phone": { "type": "string" },
                 "photo": { "type": "string", "description": "Base64 encoded image" }
               },
-              "required": [ "fullName", "company", "email" ]
+              "required": [ "fullName", "company_job_title", "email" ]
             }
           }
         ],
@@ -240,7 +240,7 @@
                     "properties": {
                       "cardId": { "type": "string" },
                       "fullName": { "type": "string" },
-                      "company": { "type": "string" },
+                      "company_job_title": { "type": "string" },
                       "email": { "type": "string" },
                       "phone": { "type": "string" },
                       "photo": { "type": "string" }
@@ -278,7 +278,7 @@
               "type": "object",
               "properties": {
                 "fullName": { "type": "string" },
-                "company": { "type": "string" },
+                "company_job_title": { "type": "string" },
                 "email": { "type": "string" },
                 "phone": { "type": "string" },
                 "photo": { "type": "string", "description": "Base64 encoded image" }
