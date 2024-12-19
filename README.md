@@ -11,20 +11,20 @@ RESTful api проекта реализованы 2 двух вариациях
 ![img1.png](images/full.png)
 
 ### Регистрация пользователя
-![img2.png](images/register.png)
-### Аутентификация пользователя
-![img3.png](images/login.png)
-### Восстановление пароля
-![img4.png](images/forgot.png)
-### Удаление аккаунта
-![img5.png](images/delete-account.png)
-### Обновление профиля пользователя
-![img6.png](images/update-profile.png)
-### Создание визитки
 ![img.png](images/img.png)
-### Получение всех визиток пользователя
+### Аутентификация пользователя
 ![img_1.png](images/img_1.png)
-### Обновление визитки
+### Восстановление пароля
 ![img_2.png](images/img_2.png)
+### Удаление аккаунта
+![img_3.png](images/img_3.png)
+### Обновление профиля пользователя
+![img_4.png](images/img_4.png)
+### Создание визитки
+![img_5.png](images/img_5.png)
+### Получение всех визиток пользователя
+![img_6.png](images/img_6.png)
+### Обновление визитки
+![img_7.png](images/img_7.png)
 ### Удаление визитки
-![img10.png](images/delete-card.png)
+![img_8.png](images/img_8.png)
