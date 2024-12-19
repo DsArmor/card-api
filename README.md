@@ -8,7 +8,7 @@ RESTful api проекта реализованы 2 двух вариациях
 
 
 ## RESTful api
-![img1.png](images/full.png)
+![img_15.png](images/full.png)
 
 ### Регистрация пользователя
 ![img.png](images/img.png)
@@ -25,6 +25,6 @@ RESTful api проекта реализованы 2 двух вариациях
 ### Получение всех визиток пользователя
 ![img_6.png](images/img_6.png)
 ### Обновление визитки
-![img_7.png](images/img_7.png)
+![img_10.png](images/img_10.png)
 ### Удаление визитки
 ![img_8.png](images/img_8.png)
